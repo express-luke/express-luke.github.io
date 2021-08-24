@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>ExpressLuke</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+<script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+<link rel="manifest" href="./icons/site.webmanifest">
+<link href="http://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Product Sans",sans-serif;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-position: center;
+  background-size: cover;
+  background: rgb(19,44,131);
+  background: linear-gradient(90deg, rgba(19,44,131,1) 0%, rgba(9,9,121,1) 32%, rgba(75,2,144,1) 100%);
+}
+
+/* Full height image header */
+.bgimg-1 {
+
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.frost {
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+}
+
+.dfrost {
+    background: rgba( 1, 1, 1, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 6.5px );
+-webkit-backdrop-filter: blur( 6.5px );
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="https://avatars.githubusercontent.com/u/16850292?v=4" style="height:24px;border-radius: 50%;"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#download" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-down"></i> DOWNLOADS</a>
+      <a href="./pages/coc.html" target="_blank" class="w3-bar-item w3-button"><i class="fa-solid fa-clipboard-list-check"></i> CODE OF CONDUCT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa-solid fa-circle-down"></i> DOWNLOADS</a>
+  <a href="#about" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa-solid fa-clipboard-list-check"></i> CODE OF CONDUCT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white" style="padding:48px">
+<center><span class="w3-jumbo w3-hide-small">ExpressLuke</span><br></center>
+<center><span class="w3-xxlarge w3-hide-large w3-hide-medium">ExpressLuke</span><br></center>
+<center><span class="w3-large">Check out this site for custom Android ROM builds and Windows ISOs </span></center>
+    <center><p><a href="#download" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><i class="fa-solid fa-circle-down"></i> Downloads</a></p></center>
+  </div> 
+</header>
+
+<!-- Download Section -->
+<div class="w3-text-white w3-container frost" style="padding:128px 16px" id="download">
+  <h3 class="w3-center">DOWNLOADS</h3>
+  <p class="w3-center w3-large">Download Android builds and Windows ISOs here!</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px;">
+    <div class="w3-quarter">
+      <i class="fa-brands fa-windows w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Windows</p>
+      <p><a target="_blank"href="https://windows.expressluke.workers.dev" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><i class="fa fa-download"></i> Download</a></p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa-brands fa-android w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">ROMs</p>
+      <p><a target="_blank"href="https://roms.expressluke.workers.dev" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><i class="fa fa-download"></i> Download</a></p>
+    </div>
+
+    <div class="w3-quarter">
+      <i class="fa-brands fa-android w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">GSI</p>
+        <p><a target="_blank" href="https://t.me/joinchat/S1IzWeWWNhFkNTNk" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><i class="fa-brands fa-telegram"></i> Channel</a></p>
+      </div>
+
+      <div class="w3-quarter">
+        <img class="fa-brands w3-margin-bottom w3-jumbo" src="./icons/amyrom.png" height="64px"></i>
+        <p class="w3-large">amyROM</p>
+        <p><a target="_blank" href="https://amyrom.ml" class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><i class="fa fa-link"></i> Website</a></p>
+      </div>
+
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center dfrost w3-text-white w3-padding-64">
+  
+  <div class="w3-xlarge w3-section">
+
+    <a target=_blank href="https://github.com/expressluke"><i class="fa-brands fa-github w3-hover-opacity"></i></a>
+    
+    <a target=_blank href="https://gitlab.com/expressluke"><i class="fa-brands fa-gitlab w3-hover-opacity"></i></a>
+    <a target=_blank href="https://paypal.me/lukew594"><i class="fa-brands fa-paypal w3-hover-opacity"></i></a>
+    <a target=_blank href="https://t.me/ogexpressluke"><i class="fa-brands fa-telegram w3-hover-opacity"></i></a>
+    <a target="_blank" href="https://forum.xda-developers.com/member.php?u=7166349"><i class="iconify-inline w3-hover-opacity" data-icon="simple-icons:xdadevelopers" data-width="22"></i></a>
+    
+  </div>
+  
+  <p>Copyright © ExpressLuke 2021 </p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <a href="#home" class="w3-button w3-black w3-opacity w3-hover-opacity-off"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
